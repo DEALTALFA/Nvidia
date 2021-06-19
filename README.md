@@ -32,4 +32,9 @@ or search cuda 10.1 download->legacy Release->find your version
         print(device_lib.list_local_devices())```
   ![image](https://user-images.githubusercontent.com/60976631/122643363-0f93a580-d12d-11eb-8168-e180455b14b8.png)
 
+      ```python
+      import tensorflow as tf
+      print(tf.test.is_built_with_cuda())```
+  ![image](https://user-images.githubusercontent.com/60976631/122643410-4ec1f680-d12d-11eb-8ba6-024de83acf1d.png)
+ - IF you see all this congratulation you have enable CUDA in your **Nvidia Geforce GTX1650 TI**
 
