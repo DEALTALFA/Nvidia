@@ -29,13 +29,13 @@ or search cuda 10.1 download->legacy Release->find your version
   *      
        ```python
         from tensorflow.python.client import device_lib
-        print(device_lib.list_local_devices())```
+        print(device_lib.list_local_devices())
   ![image](https://user-images.githubusercontent.com/60976631/122643363-0f93a580-d12d-11eb-8168-e180455b14b8.png)
   
   *
        ```python
       import tensorflow as tf
-      print(tf.test.is_built_with_cuda())```
+      print(tf.test.is_built_with_cuda())
   
   ![image](https://user-images.githubusercontent.com/60976631/122643410-4ec1f680-d12d-11eb-8ba6-024de83acf1d.png)
   
@@ -76,7 +76,7 @@ or search cuda 10.1 download->legacy Release->find your version
       batch_size = 128
       epochs = 5
       model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
-      model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, validation_split=0.1) ```
+      model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, validation_split=0.1)
   
  Good news if this code complete training in 12-13 sec
 - IF you see all this congratulation you have enable CUDA in your **Nvidia Geforce GTX1650 TI**
